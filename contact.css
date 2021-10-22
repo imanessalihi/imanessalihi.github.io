@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+body {
+  line-height: 1.6;
+}
+img {
+  width: 100%;
+  display: block;
+}
+ul li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 15px 0;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 90vw;
+  margin: 0 auto;
+}
+.btn {
+  font-size: 16px;
+  padding: 30px 30px;
+  border: none;
+  border-radius: 5%;
+  font-weight: bold;
+  background: rgb(104, 58, 122);
+  transition-duration: 0.5s;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+.btn:hover {
+  color: white;
+  background-color: rgb(158, 92, 184);
+}
+
+/* Header */
+
+.header {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url('images/background-pic.png') center/cover no-repeat;
+  color: #fff;
+}
+.top-nav a {
+  color: white;
+}
+.top-nav ul li a:hover {
+  color: rgb(177, 74, 218);
+}
+.contact-top h3:hover {
+  color: rgb(177, 74, 218);
+}
+
+.search-icon {
+  display: none;
+  margin-right: 20px;
+  float: left;
+}
+
+form.search input[type='text'] {
+  padding: 10px;
+  font-size: 15px;
+  border: none;
+  float: left;
+  width: 90%;
+  background: rgb(39, 39, 39);
+}
+.top-nav {
+  display: flex;
+}
+.top-nav ul {
+  display: flex;
+}
+
+.top-nav ul li {
+  padding: 10px 0;
+}
+.top-nav ul a {
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  display: block;
+}
+
+.nav-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.top-nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0s ease;
+  transform: translateY(0);
+  background: transparent;
+}
+
+.top-nav ul li {
+  margin-right: 30px;
+  margin-left: 30px;
+}
+.about {
+  margin-top: 0;
+}
+.search-icon {
+  flex: 0 0 10%;
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.search-icon i:hover {
+  transform: scale(1.2);
+}
+/* end of eader */
+/*section five */
+
+.contact-middle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.contact-bottom {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 40px;
+}
+
+.section-five {
+  margin: 40px 0;
+}
+.section-five .container div {
+  margin: 20px 0;
+}
+.contact-top {
+  text-align: center;
+}
+.contact-top h3 {
+  font-size: 40px;
+  color: rgb(104, 58, 122);
+  letter-spacing: 5px;
+}
+.contact-top p {
+  font-weight: 300;
+  width: 70%;
+  margin: 0 auto;
+}
+.contact-middle div {
+  text-align: center;
+  padding: 25px 0;
+  color: rgb(150, 74, 180);
+}
+.contact-middle div span {
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+}
+.contact-icon {
+  font-size: 30px;
+}
+
+.contact-bottom {
+  margin-top: 52px;
+}
+
+.form input[type='text'],
+.form input[type='email'],
+.form textarea {
+  width: 100%;
+  font-size: 16px;
+  padding: 14px 15px;
+  margin: 18px 0;
+  border: 1px solid rgb(104, 58, 122);
+  outline: none;
+  border-radius: 5px;
+}
+.contact-bottom .form {
+  padding: 0 20px;
+}
+/*end of section*/
+/*footer*/
+.footer {
+  background: rgb(30, 3, 41);
+  color: white;
+  padding: 40px 0;
+  text-align: center;
+}
+.footer-container > div {
+  margin: 40px 0;
+}
+
+.contact {
+  margin: 20px 0;
+  width: 500px;
+  display: ;
+}
+.info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+.name,
+.mail {
+  background: black;
+  height: 35px;
+  width: 230px;
+}
+.message {
+  background: black;
+  height: 80px;
+  width: 380px;
+}
+.contact i {
+  font-size: 26px;
+  flex: 10%;
+  display: block;
+}
+.contact input {
+  display: flex;
+  justify-content: flex-start;
+  justify-content: flex-start;
+  margin: 8px 0 0 15px;
+  background: transparent;
+  border: none;
+  font-size: 15px;
+  outline: 0;
+  color: white;
+}
+.message input {
+  display: flex;
+  justify-content: flex-start;
+  justify-content: flex-start;
+  margin: 8px 0 0 15px;
+  background: transparent;
+  border: none;
+  font-size: 15px;
+  outline: 0;
+  color: white;
+}
+.send {
+  display: flex;
+
+  justify-content: space-between;
+}
+.contact button {
+  font-size: 16px;
+  padding: 30px 30px;
+  border: none;
+  border-radius: 5%;
+  font-weight: bold;
+  background: rgb(104, 58, 122);
+  transition-duration: 0.5s;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+.contact button:hover {
+  color: white;
+  background-color: rgb(158, 92, 184);
+}
+.footer > p {
+  text-align: center;
+  font-size: 14px;
+}
+.footer-container > div {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+/* end of footer */

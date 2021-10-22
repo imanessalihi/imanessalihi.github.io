@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Photography Site</title>
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <link rel="stylesheet" href="gallery2.css">
+    <link rel="stylesheet" href="header.css">
+    <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="simplelightbox-master/dist/simple-lightbox.css">
+</head>
+
+<body>
+    <div class="full-img" id="fullImgBox">
+        <button id="prev" onclick="goToPrev()"><i class="fas fa-angle-double-left"></i></button>
+        <img src="images/photo12.jpg" alt="photo" id="fullImg">
+
+        </span><button id="next" onclick="goToNext()"><i class="fas fa-angle-double-right"></i></button>
+        <span id="close" onclick="closeFullImg()">X</span>
+    </div>
+    <!-- header -->
+    <header class="header">
+        <div class="nav-section">
+            <div class="navBtn">
+
+                <span class="navBtn flex">
+
+                </span>
+            </div>
+
+            <!-- navigation menu -->
+            <nav class="top-nav">
+                <div class="nav-links">
+                    <ul class="left-ul">
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li class="nav-about"><a href="index.html#about" class="active">About</a></li>
+                    </ul>
+                    <ul class="right-ul">
+                        <li><a href="gallery2.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="search-icon">
+                    <form class="search" action="action_page.php">
+                        <input type="text" placeholder="Search..." name="search">
+                    </form>
+                    <i class="fas fa-search"></i>
+                </div>
+            </nav>
+        </div>
+
+
+    </header>
+    <!-- end of header -->
+
+    <!-- main -->
+
+    <section class="section-three">
+
+        <div class="container">
+
+            <div id="gallery" class="gallery">
+
+        </div>
+    </section>
+    <!-- end of main -->
+
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer-container container">
+            <div>
+                <h3>e-mail</h3>
+                <p>hajarhaibi98@gmail.com</p>
+            </div>
+            <div>
+                <h3><i class="fas fa-envelope"></i> Feedback</h3>
+
+                <div class="contact">
+                    <div class="info">
+                        <div class="name">
+                            <input type="name" id="name" placeholder="Name">
+                        </div>
+                        <div class="mail">
+                            <input type="email" id="email" placeholder="Email Address">
+                        </div>
+                    </div>
+                    <div class="send">
+                        <div class="message">
+                            <input type="message" id="message" placeholder="Leave feedback!">
+                        </div>
+                        <div class="btnsend">
+                            <button type="submit">Send</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
